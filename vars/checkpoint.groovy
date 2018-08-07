@@ -1,6 +1,6 @@
 
 def previousBuildStageSuccess(String stageName) {
-    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + "tmp" + "@checkpoint"
+    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + "$JOB_BASE_NAME@checkpoint"
 
     println( "HEREEEE"+ "$JOB_BASE_NAME")
 
