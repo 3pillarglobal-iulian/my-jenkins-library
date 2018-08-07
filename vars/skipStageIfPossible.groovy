@@ -13,5 +13,5 @@ def isStageSkipable(String jenkinsHome, String stageName) {
 }
 
 def call(String jenkinsHome, String stageName) {
-   return isStageSkipable(stageName)
+   return isStageSkipable(jenkinsHome, stageName)
 }
