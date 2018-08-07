@@ -2,6 +2,8 @@
 def isStageSkipable(String stageName) {
     def gitDir = "$JENKINS_HOME/workspace/git"
 
+    println($JENKINS_HOME)
+
     File folder = new File(gitDir)
     File[] listOfFiles = folder.listFiles()
 
