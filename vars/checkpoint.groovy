@@ -1,8 +1,8 @@
 
 def previousBuildStageSuccess(String stageName) {
-    def gitDir = System.getenv('JENKINS_HOME') + "/workspace/git"
+    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + System.getenv('JOB_NAME') + "@checkpoint
 
-    File folder = new File(gitDir)
+    File folder = new File(dir)
     File[] listOfFiles = folder.listFiles()
 
     for (File file : listOfFiles) {
