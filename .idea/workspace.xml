@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f788b32-1bad-4992-ab55-724df739cbc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vars/checkpoint.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/checkpoint.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vars/clearCache.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/clearCache.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vars/createCheckpoint.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/createCheckpoint.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +19,8 @@
       <file leaf-file-name="checkpoint.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vars/checkpoint.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="399">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -27,8 +28,8 @@
       <file leaf-file-name="createCheckpoint.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vars/createCheckpoint.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="567">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -36,8 +37,8 @@
       <file leaf-file-name="clearCache.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vars/clearCache.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -52,9 +53,9 @@
       <list>
         <option value="$PROJECT_DIR$/vars/createData.groovy" />
         <option value="$PROJECT_DIR$/vars/skipStageIfPossible.groovy" />
-        <option value="$PROJECT_DIR$/vars/createCheckpoint.groovy" />
-        <option value="$PROJECT_DIR$/vars/clearCache.groovy" />
         <option value="$PROJECT_DIR$/vars/checkpoint.groovy" />
+        <option value="$PROJECT_DIR$/vars/clearCache.groovy" />
+        <option value="$PROJECT_DIR$/vars/createCheckpoint.groovy" />
       </list>
     </option>
   </component>
@@ -172,16 +173,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533618611980</updated>
-      <workItem from="1533618616255" duration="12342000" />
+      <workItem from="1533618616255" duration="12647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12342000" />
+    <option name="totallyTimeSpent" value="12647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -221,22 +221,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vars/clearCache.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vars/createCheckpoint.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="567">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vars/checkpoint.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="399">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
