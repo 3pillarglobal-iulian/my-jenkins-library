@@ -1,6 +1,6 @@
 
 def previousBuildStageSuccess(String stageName) {
-    def dir = System.getenv('JENKINS_HOME') + "/workspace/tmp/@checkpoint"
+    def dir = System.getenv('JENKINS_HOME') + "/workspace/tmp@checkpoint"
 
     File folder = new File(dir)
     File[] listOfFiles = folder.listFiles()
