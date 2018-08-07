@@ -12,7 +12,8 @@ Can be used in a stage called in when expression to skip the stage if wanted.
 
 Return true if checkpoint exist, false otherwise.
 
-ex: 
+ex:
+
 stage('Stage One'){
             when { expression { checkpoint(STAGE_NAME) }
             }
@@ -28,6 +29,7 @@ stage('Stage One'){
 Must be used to create checkpoint of the current stage in order to use checkpoint.
 
 ex:
+
 stage('Stage One'){
             when { expression { checkpoint(STAGE_NAME) }
             }
@@ -45,7 +47,8 @@ Can be used in a stage called in when expression to reset the previously set che
 Return true if cache is deleted, false otherwise.
 
 ex: 
- stage('Stage One'){
+
+stage('Stage One'){
             when { expression { clearCache() }
             }
             
@@ -53,7 +56,7 @@ ex:
                 ...
                 createCheckpoint (STAGE_NAME)
             }
- }
+}
             
             
 
