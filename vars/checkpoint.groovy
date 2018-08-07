@@ -9,9 +9,9 @@ def isStageSkipable(String stageName) {
 
     for (File file : listOfFiles) {
         if (file.getName().equals(stageName))
-            return true
+            return false
     }
-    return false
+    return true
 }
 
 def call(String stageName) {
