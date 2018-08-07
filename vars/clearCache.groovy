@@ -1,5 +1,5 @@
-def deleteFolder() {
-    def dir = System.getenv('JENKINS_HOME') + "/workspace/tmp@checkpoint"
+def deleteFolder(String jobName) {
+    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + jobName +"@checkpoint"
     File folder = new File(dir)
 
     if(!folder.deleteDir()) {
@@ -9,6 +9,6 @@ def deleteFolder() {
     return true
 }
 
-def call() {
-    return deleteFolder()
+def call(String jobName) {
+    return deleteFolder(jobName)
 }
