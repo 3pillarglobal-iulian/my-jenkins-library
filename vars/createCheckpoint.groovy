@@ -1,6 +1,6 @@
 
 def createStageNameFiles (String stageName) {
-    def gitDir = "$JENKINS_HOME" + "/workspace/git"
+    def gitDir = System.getenv('JENKINS_HOME') + "/workspace/git"
     def f_gitDir = new File(gitDir)
 
     if(!f_gitDir.exists()){

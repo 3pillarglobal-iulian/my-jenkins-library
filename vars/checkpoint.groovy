@@ -1,6 +1,6 @@
 
 def isStageSkipable(String stageName) {
-    def gitDir = "$JENKINS_HOME" + "/workspace/git"
+    def gitDir = System.getenv('JENKINS_HOME') + "/workspace/git"
 
     println(gitDir)
 
