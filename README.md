@@ -13,7 +13,7 @@ Can be used in a stage called in when expression to skip the stage if wanted.
 Return true if checkpoint exist, false otherwise.
 
 ex:
-
+```jenkins
 stage('Stage One'){
             when { expression { checkpoint(STAGE_NAME) }
             }
@@ -22,14 +22,14 @@ stage('Stage One'){
                ...
             }
 }
-
+```
 
 2. createCheckpoint(String stageName): void
 
 Must be used to create checkpoint of the current stage in order to use checkpoint.
 
 ex:
-
+```jenkins
 stage('Stage One'){
             when { expression { checkpoint(STAGE_NAME) }
             }
@@ -39,7 +39,8 @@ stage('Stage One'){
                 createCheckpoint (STAGE_NAME)
             }
 }
-        
+``` 
+ 
 3. clearCache(): boolean
 
 Can be used in a stage called in when expression to reset the previously set checkpoints.
@@ -47,7 +48,7 @@ Can be used in a stage called in when expression to reset the previously set che
 Return true if cache is deleted, false otherwise.
 
 ex: 
-
+```jenkins
 stage('Stage One'){
             when { expression { clearCache() }
             }
@@ -57,6 +58,6 @@ stage('Stage One'){
                 createCheckpoint (STAGE_NAME)
             }
 }
-            
+```           
             
 
