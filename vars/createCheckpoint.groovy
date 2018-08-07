@@ -1,13 +1,13 @@
 
 def createStageNameFiles (String stageName) {
-    def gitDir = System.getenv('JENKINS_HOME') + "/workspace/git"
-    def f_gitDir = new File(gitDir)
+    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + System.getenv('JOB_NAME') + "@checkpoint"
+    def f_dir = new File(dir)
 
-    if(!f_gitDir.exists()){
-        f_gitDir.mkdirs()
+    if(!f_dir.exists()){
+        f_dir.mkdirs()
     }
 
-    File folder = new File(gitDir)
+    File folder = new File(dir)
     File[] listOfFiles = folder.listFiles()
 
     boolean fileExist = false
@@ -19,7 +19,7 @@ def createStageNameFiles (String stageName) {
     }
 
     if (!fileExist) {
-        def newFile = new File(gitDir + "/" + stageName)
+        def newFile = new File(dir + "/" + stageName)
         newFile.createNewFile()
     }
 }
