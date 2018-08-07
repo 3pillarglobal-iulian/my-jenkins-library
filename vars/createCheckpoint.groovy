@@ -1,6 +1,6 @@
 
 def createStageNameFiles (String stageName) {
-    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + System.getenv('JOB_NAME') + "@checkpoint"
+    def dir = System.getenv('JENKINS_HOME') + "/workspace/tmp/@checkpoint"
     def f_dir = new File(dir)
 
     if(!f_dir.exists()){
