@@ -1,5 +1,5 @@
 
-def createStageNameFiles (String jenkinsHome, String stageName) {
+def createStageNameFiles (String stageName) {
     def gitDir = JENKINS_HOME + "/workspace/git"
     def f_gitDir = new File(gitDir)
 
@@ -24,6 +24,6 @@ def createStageNameFiles (String jenkinsHome, String stageName) {
     }
 }
 
-def call(String jenkinsHome, String stageName) {
-    createStageNameFiles(jenkinsHome, stageName)
+def call(String stageName) {
+    createStageNameFiles(stageName)
 }
