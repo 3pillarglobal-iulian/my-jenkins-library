@@ -1,8 +1,6 @@
 
-def isStageSkipable(String stageName) {
+def previousBuildStageSuccess(String stageName) {
     def gitDir = System.getenv('JENKINS_HOME') + "/workspace/git"
-
-    println(gitDir)
 
     File folder = new File(gitDir)
     File[] listOfFiles = folder.listFiles()
@@ -15,5 +13,5 @@ def isStageSkipable(String stageName) {
 }
 
 def call(String stageName) {
-   return isStageSkipable(stageName)
+   return previousBuildStageSuccess(stageName)
 }
