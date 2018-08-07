@@ -1,6 +1,6 @@
 
-def createStageNameFiles (String stageName) {
-    def gitDir = "$JENKINS_HOME/workspace/git"
+def createStageNameFiles (String jenkinsHome, String stageName) {
+    def gitDir = jenkinsHome + "/workspace/git"
 
     if(!f_gitDir.exists()){
         f_gitDir.mkdirs()
@@ -23,6 +23,6 @@ def createStageNameFiles (String stageName) {
     }
 }
 
-def call(String stageName) {
-    createStageNameFiles(stageName)
+def call(String jenkinsHome, String stageName) {
+    createStageNameFiles(jenkinsHome, stageName)
 }
