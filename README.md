@@ -20,7 +20,7 @@ stage('Stage One'){
             steps{
                ...
             }
-        }
+}
 
 
 2. createCheckpoint(String stageName): void
@@ -36,7 +36,7 @@ stage('Stage One'){
                 ...
                 createCheckpoint (STAGE_NAME)
             }
-        }
+}
         
 3. clearCache(): boolean
 
@@ -53,7 +53,7 @@ ex:
                 ...
                 createCheckpoint (STAGE_NAME)
             }
-        }
+ }
             
             
 
