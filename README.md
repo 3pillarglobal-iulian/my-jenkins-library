@@ -45,10 +45,15 @@ Can be used in a stage called in when expression to reset the previously set che
 Return true if cache is deleted, false otherwise.
 
 ex: 
-...
- when { expression { clearCache() }
- }
- ...
+ stage('Stage One'){
+            when { expression { clearCache() }
+            }
+            
+            steps{
+                ...
+                createCheckpoint (STAGE_NAME)
+            }
+        }
             
             
 
