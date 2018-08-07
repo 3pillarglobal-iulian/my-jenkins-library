@@ -1,6 +1,6 @@
 def deleteFolder() {
-    def gitDir = System.getenv('JENKINS_HOME') + "/workspace/git"
-    File folder = new File(gitDir)
+    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + System.getenv('JOB_NAME') + "@checkpoint"
+    File folder = new File(dir)
 
     if(!folder.deleteDir()) {
         println("Error on deleting folder")
