@@ -5,8 +5,9 @@ def deleteFolder() {
     if(!folder.deleteDir()) {
         println("Error on deleting folder")
     }
+    return true
 }
 
 def call() {
-    deleteFolder()
+    return deleteFolder()
 }
