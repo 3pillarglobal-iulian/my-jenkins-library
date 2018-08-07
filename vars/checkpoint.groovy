@@ -1,6 +1,6 @@
 
-def previousBuildStageSuccess(String jobName, String stageName) {
-    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + jobName + "@checkpoint"
+def previousBuildStageSuccess(String stageName) {
+    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + "tmp" + "@checkpoint"
 
     println(System.getenv('JOB_BASE_NAME'))
 
@@ -14,6 +14,6 @@ def previousBuildStageSuccess(String jobName, String stageName) {
     return true // skip stage
 }
 
-def call(String jobName, String stageName) {
-   return previousBuildStageSuccess(jobName, stageName)
+def call(String stageName) {
+   return previousBuildStageSuccess(stageName)
 }

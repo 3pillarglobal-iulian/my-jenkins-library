@@ -1,6 +1,6 @@
 
-def createStageNameFiles (String jobName, String stageName) {
-    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + jobName +"@checkpoint"
+def createStageNameFiles (String stageName) {
+    def dir = System.getenv('JENKINS_HOME') + "/workspace/" + "tmp" + "@checkpoint"
     def f_dir = new File(dir)
 
     if(!f_dir.exists()){
@@ -24,6 +24,6 @@ def createStageNameFiles (String jobName, String stageName) {
     }
 }
 
-def call(String jobName, String stageName) {
-    createStageNameFiles(jobName, stageName)
+def call(String stageName) {
+    createStageNameFiles(stageName)
 }
