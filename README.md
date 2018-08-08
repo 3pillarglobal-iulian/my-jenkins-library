@@ -1,7 +1,7 @@
 
 METHODS AVAILABLE:
 1. checkpoint(String stageName)
-2. crateCheckpoint(String stageName)
+2. createCheckpoint(String stageName)
 3. removeCheckpoint()
 
 HOW TO USE:
