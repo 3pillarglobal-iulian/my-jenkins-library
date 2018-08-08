@@ -41,7 +41,7 @@ stage('Stage One'){
 }
 ``` 
  
-3. clearCache(): boolean
+3. removeCheckpoint(): boolean
 
 Can be used in a stage called in when expression to reset the previously set checkpoints.
 
