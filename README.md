@@ -2,7 +2,7 @@
 METHODS AVAILABLE:
 1. checkpoint(String stageName)
 2. crateCheckpoint(String stageName)
-3. clearCache()
+3. removeCheckpoint()
 
 HOW TO USE:
 
@@ -50,7 +50,7 @@ Return true if cache is deleted, false otherwise.
 ex: 
 ```groovy
 stage('Stage One'){
-            when { expression { clearCache() }
+            when { expression { removeCheckpoint() }
             }
             
             steps{
